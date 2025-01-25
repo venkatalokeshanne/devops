@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: makein-container
-        image: avlokesh8/makein:latest
+        image: avlokesh/makein:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
