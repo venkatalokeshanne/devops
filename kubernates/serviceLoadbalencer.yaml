@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: makein-service
+  labels:
+    app: makein
+    tier: frontend
+    environment: production
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: external
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+spec:
+  selector:
+    app: makein
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
