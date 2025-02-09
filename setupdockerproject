@@ -6,3 +6,18 @@ nodejs
 docker pipeline
 eclipse temurin
 pipeline stage view
+
+
+#Add tools
+
+step 1: Add jdk
+name: jdk17
+
+Add sonarqube
+name: mysonar
+
+Node js
+name: nodejs
+
+dependency check
+name: dependencycheck
