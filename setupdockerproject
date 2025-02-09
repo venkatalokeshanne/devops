@@ -1,0 +1,8 @@
+#Jenkins plugins
+
+sonarqube scanner
+owasp dependency check
+nodejs
+docker pipeline
+eclipse temurin
+pipeline stage view
